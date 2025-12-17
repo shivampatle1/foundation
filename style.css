@@ -108,7 +108,7 @@ body {
 }
 .floating-anim { animation: float 4s ease-in-out infinite; }
 
-.btn-gold {
+.btn-gold { 
     background: linear-gradient(45deg, #FFD700, #FDB931);
     color: #3E2723;
     border: none;

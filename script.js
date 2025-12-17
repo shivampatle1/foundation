@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open(url, '_blank').focus();
     });
 });
-
+ 
 // 4. Button Text Toggle (Optional: Change 'Read More' to 'Close')
 const collapseButtons = document.querySelectorAll('[data-bs-toggle="collapse"]');
 collapseButtons.forEach(btn => {
