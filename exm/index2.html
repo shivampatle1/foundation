@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>होम | राजा भोज फाउंडेशन</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ROYAL THEME BASED ON LOGO */
+        :root {
+            --primary-color: #5D4037; /* Royal Brown from Logo */
+            --accent-color: #D4AF37; /* Gold color */
+            --light-bg: #fdfbf7;
+        }
+        
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--light-bg); }
+        
+        /* Navbar */
+        .navbar { background-color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .nav-link { color: var(--primary-color) !important; font-weight: 600; font-size: 1.1rem; }
+        .nav-link:hover { color: var(--accent-color) !important; }
+        .nav-link.active { color: var(--accent-color) !important; border-bottom: 2px solid var(--accent-color); }
+        
+        .logo-img { height: 70px; margin-right: 15px; } /* लोगो का साइज */
+
+        /* Hero Carousel */
+        .carousel-item { height: 85vh; min-height: 300px; background: no-repeat center center scroll; background-size: cover; }
+        .carousel-caption { background: rgba(93, 64, 55, 0.7); padding: 30px; border-radius: 10px; bottom: 20%; }
+        
+        /* Buttons */
+        .btn-royal { background-color: var(--primary-color); color: #fff; padding: 10px 30px; border-radius: 50px; transition: 0.3s; }
+        .btn-royal:hover { background-color: var(--accent-color); color: #000; transform: translateY(-3px); }
+
+        /* Footer */
+        footer { background-color: var(--primary-color); color: #fff; padding-top: 50px; }
+        footer a { color: var(--accent-color); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="rajabhoj/RajaBhoj logo.png" alt="Logo" class="logo-img rounded-circle">
+                <div>
+                    <h5 class="mb-0 fw-bold" style="color: var(--primary-color);">राजा भोज फाउंडेशन</h5>
+                    <small style="font-size: 12px; color: #666;">जिला बालाघाट (म.प्र.)</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">होम</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">हमारे बारे में</a></li>
+                    <li class="nav-item"><a class="nav-link" href="join.html">सदस्य बनें</a></li>
+                    <li class="nav-item ms-2">
+                        <a href="join.html" class="btn btn-royal">जुड़ें <i class="bi bi-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url(https://cdn.pixabay.com/photo/2016/07/17/19/00/background-1524526_1280.png)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="display-4 fw-bold">पवार समाज की नई पहचान</h1>
+                    <p class="lead">बालाघाट के हर घर तक पहुँचने का संकल्प। विशाल बिसेन और टीम का प्रयास।</p>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url(https://cdn.pixabay.com/photo/2016/07/17/19/00/background-1524526_1280.png)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>जिला स्तरीय राजा भोज क्रिकेट टूर्नामेंट 2026</h1>
+                    <p>युवाओं को खेल से जोड़ना और प्रतिभा को निखारना हमारा लक्ष्य है।</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <section class="py-5 container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold" style="color: var(--primary-color);">हमारा कार्यक्षेत्र</h2>
+            <div style="width: 100px; height: 3px; background: var(--accent-color); margin: 10px auto;"></div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-right">
+                <div class="p-4 bg-white shadow rounded text-center h-100 border-top border-4 border-warning">
+                    <i class="bi bi-people-fill display-4 text-warning mb-3"></i>
+                    <h4>सामाजिक एकता</h4>
+                    <p>पवार कास्ट के सभी भाई-बंधुओं को एक मंच पर लाना और आपसी भाईचारा बढ़ाना।</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="p-4 bg-white shadow rounded text-center h-100 border-top border-4 border-warning">
+                    <i class="bi bi-trophy-fill display-4 text-warning mb-3"></i>
+                    <h4>खेल एवं युवा (2026)</h4>
+                    <p>आगामी जिला स्तरीय क्रिकेट टूर्नामेंट के माध्यम से युवाओं में ऊर्जा का संचार करना।</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-left">
+                <div class="p-4 bg-white shadow rounded text-center h-100 border-top border-4 border-warning">
+                    <i class="bi bi-heart-fill display-4 text-warning mb-3"></i>
+                    <h4>जन सेवा</h4>
+                    <p>जरूरतमंदों की सहायता करना और समाज के उत्थान के लिए कार्य करना।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center pb-4">
+        <div class="container">
+            <h4 class="mb-3">राजा भोज फाउंडेशन, बालाघाट</h4>
+            <p>संपर्क: विशाल बिसेन | मोबाइल: +91-XXXXXXXXXX</p>
+            <div class="mb-4">
+                <a href="#" class="mx-2"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="mx-2"><i class="bi bi-whatsapp fs-4"></i></a>
+                <a href="#" class="mx-2"><i class="bi bi-instagram fs-4"></i></a>
+            </div>
+            <p class="small">&copy; 2025 Raja Bhoj Foundation. Designed with ❤️ for Balaghat.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+</body>
+</html>

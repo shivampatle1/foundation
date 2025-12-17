@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>जुड़ें | राजा भोज फाउंडेशन</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        :root { --primary-color: #5D4037; --accent-color: #D4AF37; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #fdfbf7; }
+        .navbar { background-color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .logo-img { height: 70px; margin-right: 15px; }
+        .btn-royal { background-color: var(--primary-color); color: white; width: 100%; padding: 12px; font-weight: bold; }
+        .btn-royal:hover { background-color: var(--accent-color); color: #000; }
+        .form-control:focus { border-color: var(--accent-color); box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="RajaBhoj logo.jpg" alt="Logo" class="logo-img rounded-circle">
+                <div>
+                    <h5 class="mb-0 fw-bold" style="color: var(--primary-color);">राजा भोज फाउंडेशन</h5>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">होम</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">हमारे बारे में</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="join.html" style="color: var(--accent-color)!important;">सदस्य बनें</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8" data-aos="zoom-in">
+                    <div class="bg-white p-5 rounded shadow-lg border-top border-5 border-warning">
+                        <div class="text-center mb-4">
+                            <h2 class="fw-bold" style="color: var(--primary-color);">समाज से जुड़ें</h2>
+                            <p class="text-muted">बालाघाट के विकास में भागीदार बनने के लिए फॉर्म भरें</p>
+                        </div>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">पूरा नाम</label>
+                                <input type="text" class="form-control" placeholder="उदा. विशाल बिसेन">
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">पिता का नाम</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">गौत्र</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">मोबाइल नंबर (WhatsApp)</label>
+                                <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">तहसील</label>
+                                    <select class="form-select">
+                                        <option selected>चुनें...</option>
+                                        <option>बालाघाट</option>
+                                        <option>वारासिवनी</option>
+                                        <option>कटंगी</option>
+                                        <option>लांजी</option>
+                                        <option>लालबर्रा</option>
+                                        <option>अन्य</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label fw-bold">गाँव / वार्ड</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="check1">
+                                <label class="form-check-label small" for="check1">मैं राजा भोज फाउंडेशन के नियमों का पालन करने की शपथ लेता हूँ।</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-royal">सबमिट करें</button>
+                            
+                            <div class="text-center mt-3">
+                                <a href="https://wa.me/91XXXXXXXXXX" class="text-decoration-none text-success fw-bold">
+                                    <i class="bi bi-whatsapp"></i> सीधे WhatsApp पर मैसेज करें
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3" style="background-color: var(--primary-color); color: white;">
+        <p class="mb-0">Raja Bhoj Foundation &copy; 2025</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+</body>
+</html>
