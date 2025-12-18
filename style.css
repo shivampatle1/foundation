@@ -114,3 +114,144 @@ body {
     border: none;
     font-weight: bold;
 }
+
+/* =========================================
+   PREMIUM TEAM SECTION STYLES
+   ========================================= */
+
+/* 1. Main Card Design */
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08); /* Soft Shadow */
+    transition: all 0.4s ease;
+    text-align: center;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.profile-card:hover {
+    transform: translateY(-10px); /* ऊपर उठने का इफेक्ट */
+    box-shadow: 0 15px 30px rgba(93, 64, 55, 0.2); /* Brown Shadow Glow */
+}
+
+/* 2. Top Colored Curve Background */
+.card-header-bg {
+    height: 80px;
+    background: linear-gradient(45deg, var(--primary-color), #5a382e);
+    border-radius: 0 0 50% 50% / 20px; /* नीचे से हल्का गोल */
+}
+
+/* 3. Profile Image */
+.profile-img-box {
+    margin-top: -50px; /* ऊपर की तरफ खिसकाएं */
+    display: inline-block;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.profile-img-box img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-color); /* Golden Border */
+}
+
+/* 4. Text Content */
+.card-content {
+    padding: 15px;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+/* 5. Role Badge (Designation) */
+.role-badge {
+    display: inline-block;
+    background: #fff8e1; /* Light Gold Bg */
+    color: #bfa018; /* Dark Gold Text */
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 6. Info Button (Parichay) */
+.btn-more {
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 30px;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-more:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* 7. Collapsible Info Box */
+.info-box {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #666;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-color);
+}
+
+/* 8. Social Icons */
+.social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #eee;
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background: var(--primary-color);
+    color: var(--accent-color);
+    transform: scale(1.1);
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .profile-img-box img {
+        width: 70px;
+        height: 70px;
+    }
+    .card-header-bg {
+        height: 60px;
+    }
+    .profile-img-box {
+        margin-top: -40px;
+    }
+    .name {
+        font-size: 1rem;
+    }
+}
